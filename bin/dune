@@ -1,0 +1,9 @@
+(executable
+ (public_name time-wind-ocaml)
+ (name main)
+ (libraries 
+  bogue 
+  cohttp-lwt-unix 
+  cohttp-async
+  uri
+  yojson))
