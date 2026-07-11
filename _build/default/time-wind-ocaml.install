@@ -1,8 +1,0 @@
-lib: [
-  "_build/install/default/lib/time-wind-ocaml/META"
-  "_build/install/default/lib/time-wind-ocaml/dune-package"
-  "_build/install/default/lib/time-wind-ocaml/opam"
-]
-bin: [
-  "_build/install/default/bin/time-wind-ocaml"
-]
