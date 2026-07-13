@@ -43,7 +43,7 @@ let time_label = Widget.label
   (Printf.sprintf "%02d:%02d:%02d" hour minute second) 
 
 
-let button = Widget.button "Test button"
+let button = Widget.button "Hello goy"
 
 
 (*Layout*)
@@ -51,13 +51,9 @@ let temp_x = width - 150
 let temp_y = 10
 let temp_layout = Layout.resident ~x:temp_x ~y:temp_y temperature_lable
 
-
-let time_bounding_widget = Widget.empty ~w:(width - 23) ~h:height ()
-
-let box_layout = Layout.resident time_bounding_widget
-let label_layout = Layout.resident time_label
-
-let time_layout = Layout.superpose ~center:true [box_layout; label_layout]
+let time_x = (width / 2) + 30  
+let time_y = (height / 2) - 20
+let time_layout = Layout.resident ~x:time_x ~y:time_y time_label
 
 
 let button_x = 10
